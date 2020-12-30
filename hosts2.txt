@@ -1,0 +1,39 @@
+# This file is processed by `hosts2inventory.pl` into an Ansible inventory
+# `hosts` file.
+#
+# Keep the hosts alphabetical!
+# Comments and blanks ignore
+#    In-line comments NOT allowed!
+# Get the possible groups by:
+#    grep -P '^\s+\w+' hosts2.txt | sort -u
+
+backup-server
+    debian
+    backup
+    rpi
+    server
+    variable1=foo
+    variable2=bar
+
+desktop1
+    desktop
+    gui
+    mint
+    workstation
+
+laptop1
+    gui
+    laptop
+    mint
+    workstation
+
+server1
+    debian
+    dhcp
+    dns
+    postfix
+    server
+    variable3=baz
+
+# server2
+# not built yet
